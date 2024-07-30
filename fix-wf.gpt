@@ -9,6 +9,9 @@ Environment:
 1. The current dir has the git repo at the correct commit.
 
 Steps:
+1. Run the below to setup git:
+    git config --global user.name "github-actions[bot]"
+    git config --global user.email "github-actions[bot]@users.noreply.github.com"
 1. Install goreleaser by running "go install github.com/goreleaser/goreleaser/v2@latest"
 1. Troubleshoot the issue by reading the workflow logs.
 1. Fix the issue by editing the local files.
