@@ -1,0 +1,9 @@
+Context: github.com/gptscript-ai/clio/context
+Tools: sys.getenv
+
+Your goal is to troubleshoot a failed GitHub workflow.
+You are given the ID of a failing workflow.
+You have the gh and git CLIs available.
+Troubleshoot the issue by reading the workflow logs.
+The cwd has the git repo at the correct commit.
+After resolving the issue make any necesary changes, create a commit and PR to fix the issue.
