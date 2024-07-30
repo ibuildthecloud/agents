@@ -20,5 +20,5 @@ Steps:
 1. Troubleshoot the issue by reading the workflow logs.
 1. Fix the issue by editing the local files.
 1. Create a commit.
-1. Create a new branch, pick a good branch name and use the workflow ID as a suffix.
+1. Create a new branch, pick a good branch name. If the branch already exists add a suffix -1 or -2, -3, etc until you find one that doesn't exist.
 1. Create a PR using the gh CLI.
