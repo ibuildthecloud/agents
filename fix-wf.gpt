@@ -2,8 +2,15 @@ Context: github.com/gptscript-ai/clio/context
 Tools: sys.getenv
 
 Your goal is to troubleshoot a failed GitHub workflow.
-You are given the ID of a failing workflow.
-You have the gh and git CLIs available.
-Troubleshoot the issue by reading the workflow logs.
-The cwd has the git repo at the correct commit.
-After resolving the issue make any necesary changes, create a commit and PR to fix the issue.
+
+Environment:
+1. You have the gh and git CLIs available.
+1. You are given the ID of a failing workflow.
+1. gorelease can be installed by running "go install github.com/goreleaser/goreleaser/v2@latest" if needed
+1. The current dir has the git repo at the correct commit.
+
+Steps:
+1. Troubleshoot the issue by reading the workflow logs.
+2. Fix the issue by editing the local files.
+3. Create a commit.
+4. Create a PR using the gh CLI.
