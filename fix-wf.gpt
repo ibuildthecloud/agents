@@ -8,6 +8,10 @@ Environment:
 1. You are given the ID of a failing workflow.
 1. The current dir has the git repo at the correct commit.
 
+Rules:
+1. DO NOT RUN TASKS IN PARALLEL!!!!
+1. RUN TASKS ONE AFTER ANOTHER!!!!
+
 Steps:
 1. Run the below to setup git:
     git config --global user.name "github-actions[bot]"
