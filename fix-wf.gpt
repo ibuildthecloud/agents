@@ -16,6 +16,7 @@ Steps:
 1. Install goreleaser by running "go install github.com/goreleaser/goreleaser/v2@latest"
 1. Troubleshoot the issue by reading the workflow logs.
 1. Fix the issue by editing the local files.
-1. Create a commit.
-1. Create a new branch, pick a good branch name. If the branch already exists add a suffix -1 or -2, -3, etc until you find one that doesn't exist.
-1. Create a PR using the gh CLI.
+1. Once fixed, create a local branch from the current commit.
+1. Add the changed files and create a commit
+1. Push the branch and create a PR with the GH cli.
+1. If the branch already exist add a incrementing number as suffix until you find a branch that doesn't exist.
